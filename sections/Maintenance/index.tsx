@@ -1,25 +1,28 @@
-import Image from 'next/image';
-import { Social } from 'components';
 import {
   ContactFooter,
   ContactOptions,
   Copyright,
   Empty,
-  Layout,
   Illustration,
+  Layout,
+  StyledImage,
   StyledText,
   StyledTitle,
 } from './styles';
+import { SocialLink, socials } from 'data';
 
+import { Social } from 'components';
 import construction from 'assets/illustrations/construction.png';
-
-import { socials, SocialLink } from 'data';
 
 export const Maintenance = (): JSX.Element => (
   <>
     <Layout>
       <Illustration>
-        <Image alt='Under Construction' placeholder='blur' src={construction} />
+        <StyledImage
+          alt='Under Construction'
+          placeholder='blur'
+          src={construction}
+        />
       </Illustration>
       <StyledTitle centered>Under Construction</StyledTitle>
       <StyledText centered>

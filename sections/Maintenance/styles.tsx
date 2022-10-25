@@ -1,6 +1,8 @@
-import styled from 'styled-components';
 import { Text, Title } from 'components';
+
 import { FullPage as FullPageLayout } from 'layout';
+import Image from 'next/image';
+import styled from 'styled-components';
 
 export const Layout = styled(FullPageLayout)`
   display: flex;
@@ -22,6 +24,12 @@ export const Illustration = styled.div`
   @media (min-width: 400px) {
     margin-bottom: 6rem;
   }
+`;
+
+export const StyledImage = styled(Image)`
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
 `;
 
 export const StyledTitle = styled(Title)`
