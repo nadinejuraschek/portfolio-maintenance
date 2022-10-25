@@ -1,9 +1,9 @@
 // components/head.js
 import * as React from 'react';
-import NextHead from 'next/head';
-import { GoogleFonts } from 'next-google-fonts';
 
+import { GoogleFonts } from 'next-google-fonts';
 import { HeadProps } from 'head/types';
+import NextHead from 'next/head';
 
 export const Head = ({ children, title }: HeadProps): JSX.Element => (
   <>
@@ -29,20 +29,6 @@ export const Head = ({ children, title }: HeadProps): JSX.Element => (
         type='image/png'
         href='assets/logo/favicon.ico'
       />
-
-      {/* <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=UA-161836118-1"
-      ></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-          dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-161836118-1');
-      </script> */}
 
       {children}
     </NextHead>
