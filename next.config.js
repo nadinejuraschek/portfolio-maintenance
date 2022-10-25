@@ -3,7 +3,7 @@ module.exports = {
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
-      use: ["@svgr/webpack"]
+      use: ['@svgr/webpack'],
     });
 
     return config;
@@ -13,8 +13,10 @@ module.exports = {
   },
   compiler: {
     removeConsole: true,
-    styledComponents: true,
+    styledComponents: {
+      ssr: true,
+    },
   },
   productionBrowserSourceMaps: true,
   swcMinify: true,
-}
+};

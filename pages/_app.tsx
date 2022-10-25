@@ -1,6 +1,10 @@
 /* eslint-disable @next/next/inline-script-id */
 import { GlobalStyle } from '../styles';
+import { Nunito } from '@next/font/google';
 import Script from 'next/script';
+
+// If loading a variable font, you don't need to specify the font weight
+const nunito = Nunito();
 
 export default function App({ Component, pageProps }) {
   return (
@@ -22,7 +26,7 @@ export default function App({ Component, pageProps }) {
       </Script>
 
       <GlobalStyle />
-      <Component {...pageProps} />
+      <Component className={nunito.className} {...pageProps} />
     </>
   );
 }

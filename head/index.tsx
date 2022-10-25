@@ -1,13 +1,11 @@
 // components/head.js
 import * as React from 'react';
 
-import { GoogleFonts } from 'next-google-fonts';
 import { HeadProps } from 'head/types';
 import NextHead from 'next/head';
 
 export const Head = ({ children, title }: HeadProps): JSX.Element => (
   <>
-    <GoogleFonts href='https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap' />
     <NextHead>
       <meta charSet='UTF-8' />
       <meta name='viewport' content='width=device-width, initial-scale=1.0' />
