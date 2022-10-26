@@ -1,6 +1,5 @@
-import { Wrapper } from './styles';
-
 import { LayoutProps } from './types';
+import { Wrapper } from './styles';
 
 export const FullPage = ({
   children,

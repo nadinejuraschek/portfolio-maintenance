@@ -9,9 +9,9 @@ import {
   StyledText,
   StyledTitle,
 } from './styles';
+import { CookieConsent, Social } from 'components';
 import { SocialLink, socials } from 'data';
 
-import { Social } from 'components';
 import construction from 'assets/illustrations/construction.png';
 
 export const Maintenance = (): JSX.Element => (
@@ -48,5 +48,6 @@ export const Maintenance = (): JSX.Element => (
       </ContactOptions>
       <Empty />
     </ContactFooter>
+    <CookieConsent />
   </>
 );
